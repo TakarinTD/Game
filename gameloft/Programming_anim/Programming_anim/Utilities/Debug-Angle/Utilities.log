@@ -1,0 +1,11 @@
+﻿  TGA.cpp
+  MemoryOperators.cpp
+  MemoryManager.cpp
+  U_Math.cpp
+  esUtil_win.cpp
+  esUtil.cpp
+  esShader.cpp
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(E:\gameloft\Programming_anim\Programming_anim\\Lib\Angle\Utilities.lib) does not match the Library's OutputFile property value (E:\gameloft\Programming_anim\Programming_anim\Lib\Angle\UtilitiesD.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(Utilities) does not match the Library's OutputFile property value (UtilitiesD). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  Utilities.vcxproj -> E:\gameloft\Programming_anim\Programming_anim\\Lib\Angle\Utilities.lib
