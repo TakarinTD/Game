@@ -3,8 +3,7 @@
 #include "Shaders.h"
 #include "Texture.h"
 #include "Models.h"
-#include "SpriteAnimation.h"
-#include "Sprite2D.h"
+
 
 extern int screenWidth; //need get on Graphic engine
 extern int screenHeight; //need get on Graphic engine
@@ -23,7 +22,7 @@ GSSetting::~GSSetting()
 void GSSetting::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_setting");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_play");
 
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");

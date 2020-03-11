@@ -29,6 +29,15 @@ std::shared_ptr<GameStateBase> GameStateBase::CreateState(StateTypes stt)
 	case STATE_Pause:
 		gs = std::make_shared<GSPauseMenu>();
 		break;
+	case STATE_Exit:
+		gs = std::make_shared<GSMenu>();
+		break;
+	case STATE_Resume:
+		gs = std::make_shared<GSPlay>();
+		break;
+	case STATE_Restart:
+		gs = std::make_shared<GSPlay>();
+		break;
 	default:
 		break;
 	}

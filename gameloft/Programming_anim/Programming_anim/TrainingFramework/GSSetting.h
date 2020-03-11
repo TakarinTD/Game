@@ -1,10 +1,7 @@
 #pragma once
 #include"GameStates/gamestatebase.h"
+#include "GameButton.h"
 
-class Sprite2D;
-class Sprite3D;
-class Text;
-class SpriteAnimation;
 
 class GSSetting :
 	public GameStateBase

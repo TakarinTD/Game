@@ -1,10 +1,6 @@
 #pragma once
 #include"GameStates/gamestatebase.h"
-
-class Sprite2D;
-class Sprite3D;
-class Text;
-class SpriteAnimation;
+#include "GameButton.h"
 
 class GSPauseMenu :
 	public GameStateBase
@@ -26,8 +22,10 @@ public:
 	void Update(float deltaTime);
 	void Draw();
 
+
 private:
 
 	std::shared_ptr<Sprite2D> m_BackGround;
+	std::list<std::shared_ptr<GameButton>>	m_listButton;
 };
 

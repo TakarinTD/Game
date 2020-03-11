@@ -54,7 +54,7 @@ void GSPlay::Init()
 	// Animation
 	shader = ResourceManagers::GetInstance()->GetShader("Animation");
 	texture = ResourceManagers::GetInstance()->GetTexture("ball");
-	std::shared_ptr<SpriteAnimation> obj = std::make_shared<SpriteAnimation>(model, shader, texture, 2, 1.0f);
+	std::shared_ptr<SpriteAnimation> obj = std::make_shared<SpriteAnimation>(model, shader, texture, 2, 0.5f);
 	obj->Set2DPosition(240, 400);
 	obj->SetSize(100, 100);
 	m_listSpriteAnimations.push_back(obj);
