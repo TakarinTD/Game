@@ -33,32 +33,32 @@ void GSPauseMenu::Init()
 	m_BackGround->Set2DPosition(screenWidth / 2, screenHeight / 2);
 	m_BackGround->SetSize(screenWidth, screenHeight);
 	//button resume
-	texture = ResourceManagers::GetInstance()->GetTexture("button_resume1");
+	texture = ResourceManagers::GetInstance()->GetTexture("button_restart");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, 200);
-	button->SetSize(200, 50);
+	button->SetSize(50, 50);
 	button->SetOnClick([]() {
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Resume);
 	});
 	m_listButton.push_back(button);
-	//button restart
-	texture = ResourceManagers::GetInstance()->GetTexture("button_restart");
-	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 300);
-	button->SetSize(200, 50);
-	button->SetOnClick([]() {
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Restart);
-	});
-	m_listButton.push_back(button);
-	//button exit
-	texture = ResourceManagers::GetInstance()->GetTexture("button_exit");
-	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 400);
-	button->SetSize(200, 50);
-	button->SetOnClick([]() {
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Exit);
-	});
-	m_listButton.push_back(button);
+	////button restart
+	//texture = ResourceManagers::GetInstance()->GetTexture("button_restart");
+	//button = std::make_shared<GameButton>(model, shader, texture);
+	//button->Set2DPosition(screenWidth / 2, 300);
+	//button->SetSize(200, 50);
+	//button->SetOnClick([]() {
+	//	GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Restart);
+	//});
+	//m_listButton.push_back(button);
+	////button exit
+	//texture = ResourceManagers::GetInstance()->GetTexture("button_exit");
+	//button = std::make_shared<GameButton>(model, shader, texture);
+	//button->Set2DPosition(screenWidth / 2, 400);
+	//button->SetSize(200, 50);
+	//button->SetOnClick([]() {
+	//	GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Exit);
+	//});
+	//m_listButton.push_back(button);
 
 }
 void GSPauseMenu::Exit()

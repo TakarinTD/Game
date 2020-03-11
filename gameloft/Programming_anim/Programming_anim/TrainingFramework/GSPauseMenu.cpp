@@ -35,8 +35,8 @@ void GSPauseMenu::Init()
 	//button resume
 	texture = ResourceManagers::GetInstance()->GetTexture("button_resume1");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 200);
-	button->SetSize(200, 50);
+	button->Set2DPosition(screenWidth / 2, 250);
+	button->SetSize(50, 50);
 	button->SetOnClick([]() {
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Resume);
 	});
@@ -44,8 +44,8 @@ void GSPauseMenu::Init()
 	//button restart
 	texture = ResourceManagers::GetInstance()->GetTexture("button_restart");
 	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 300);
-	button->SetSize(200, 50);
+	button->Set2DPosition(screenWidth / 2, 350);
+	button->SetSize(50, 50);
 	button->SetOnClick([]() {
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Restart);
 	});
@@ -53,8 +53,8 @@ void GSPauseMenu::Init()
 	//button exit
 	texture = ResourceManagers::GetInstance()->GetTexture("button_exit");
 	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 400);
-	button->SetSize(200, 50);
+	button->Set2DPosition(screenWidth / 2, 450);
+	button->SetSize(50, 50);
 	button->SetOnClick([]() {
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Exit);
 	});

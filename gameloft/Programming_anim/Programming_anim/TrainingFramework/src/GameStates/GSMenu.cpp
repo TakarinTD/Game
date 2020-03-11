@@ -44,7 +44,7 @@ void GSMenu::Init()
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Setting);
 	});
 	m_listButton.push_back(button);
-	//exit button
+	//quit button
 	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, 400);

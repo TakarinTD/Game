@@ -1,3 +1,7 @@
-﻿  GameStateMachine.cpp
+﻿  GSPauseMenu.cpp
+e:\gameloft\programming_anim\programming_anim\trainingframework\gspausemenu.cpp(33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+e:\gameloft\programming_anim\programming_anim\trainingframework\gspausemenu.cpp(38): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+e:\gameloft\programming_anim\programming_anim\trainingframework\gspausemenu.cpp(47): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+e:\gameloft\programming_anim\programming_anim\trainingframework\gspausemenu.cpp(56): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
   TrainingFramework.vcxproj -> E:\gameloft\Programming_anim\Programming_anim\\BIN-Angle\TrainingFramework.exe
   TrainingFramework.vcxproj -> E:\gameloft\Programming_anim\Programming_anim\\BIN-Angle\TrainingFramework.pdb (Full PDB)
