@@ -1,0 +1,10 @@
+﻿  esShader.cpp
+  esUtil.cpp
+  esUtil_win.cpp
+  U_Math.cpp
+  MemoryManager.cpp
+  MemoryOperators.cpp
+  TGA.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\WDExpress\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1397,5): warning MSB8012: TargetPath(E:\gameloft\Programming_anim\Programming_anim\\BIN-Nvidia\Utilities.lib) does not match the Library's OutputFile property value (E:\gameloft\Programming_anim\Programming_anim\BIN-Nvidia\UtilitiesR.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\WDExpress\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1399,5): warning MSB8012: TargetName(Utilities) does not match the Library's OutputFile property value (UtilitiesR). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  Utilities.vcxproj -> E:\gameloft\Programming_anim\Programming_anim\\BIN-Nvidia\Utilities.lib

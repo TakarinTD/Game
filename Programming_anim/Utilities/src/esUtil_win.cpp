@@ -19,6 +19,7 @@ LRESULT WINAPI ESWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		ESContext* esContext = (ESContext*)(LONG_PTR)GetWindowLongPtr(hWnd, GWL_USERDATA);
 
 		if (esContext && esContext->drawFunc)
+
 			esContext->drawFunc(esContext);
 
 		ValidateRect(esContext->hWnd, NULL);

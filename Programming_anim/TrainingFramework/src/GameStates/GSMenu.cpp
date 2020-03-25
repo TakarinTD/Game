@@ -2,7 +2,7 @@
 
 extern int screenWidth; //need get on Graphic engine
 extern int screenHeight; //need get on Graphic engine
-
+extern int clickstat;
 GSMenu::GSMenu()
 {
 
@@ -18,7 +18,7 @@ GSMenu::~GSMenu()
 void GSMenu::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_play");
 
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
@@ -54,12 +54,6 @@ void GSMenu::Init()
 	});
 	m_listButton.push_back(button);
 
-
-	//text game title
-	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
-	m_Text_gameName = std::make_shared< Text>(shader, font, "Save Ball", TEXT_COLOR::GREEN, 1.0);
-	m_Text_gameName->Set2DPosition(Vector2(screenWidth / 2-50, 120));
 }
 
 void GSMenu::Exit()
@@ -90,10 +84,16 @@ void GSMenu::HandleKeyEvents(int key, bool bIsPressed)
 
 void GSMenu::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
-	for (auto it : m_listButton)
-	{
-		(it)->HandleTouchEvents(x, y, bIsPressed);
-		if ((it)->IsHandle()) break;
+	if (!clickstat) {
+		for (auto it : m_listButton)
+		{
+			(it)->HandleTouchEvents(x, y, bIsPressed);
+			if ((it)->IsHandle()) break;
+		} clickstat = 1;
+	}
+	else {
+		
+		clickstat = 0;
 	}
 }
 
@@ -113,5 +113,4 @@ void GSMenu::Draw()
 	{
 		it->Draw();
 	}
-	m_Text_gameName->Draw();
 }

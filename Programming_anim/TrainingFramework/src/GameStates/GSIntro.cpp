@@ -3,7 +3,7 @@
 
 extern int screenWidth; //need get on Graphic engine
 extern int screenHeight; //need get on Graphic engine
-
+int clickstat;
 
 GSIntro::GSIntro()
 {
@@ -18,7 +18,7 @@ GSIntro::~GSIntro()
 
 void GSIntro::Init()
 {
-	
+	clickstat = 0;
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
 	auto texture = ResourceManagers::GetInstance()->GetTexture("intro");

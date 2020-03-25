@@ -1,1 +1,59 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets(57,5): error MSB8020: The build tools for v142 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install v142 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  autofit.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftbitmap.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftfstype.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftgasp.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftstroke.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftbbox.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftpfr.c
+  ftsynth.c
+  fttype1.c
+  ftwinfnt.c
+  ftxf86.c
+  ftlcdfil.c
+  ftgxval.c
+  ftotval.c
+  ftpatent.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  bdf.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  cff.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftbase.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftcache.c
+  ftglyph.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftgzip.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftinit.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftlzw.c
+  ftsystem.c
+  smooth.c
+  ftmm.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  raster.c
+  psmodule.c
+  sfnt.c
+  truetype.c
+  type1.c
+  type1cid.c
+  type42.c
+  winfnt.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ftdebug.c
+  freetype.vcxproj -> E:\gameloft\Programming_anim\Programming_anim\freetype\builds\windows\vc2019\.\..\..\..\objs\vc2010\x64\freetype254MT.lib

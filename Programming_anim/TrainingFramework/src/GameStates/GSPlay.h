@@ -6,7 +6,6 @@
 #include"card.h"
 #include <vector>
 #include <ctime>
-#include <windows.h>
 
 class Sprite2D;
 class Sprite3D;
@@ -17,23 +16,21 @@ class GSPlay :
 	public GameStateBase
 {
 public:
+	
 	GSPlay();
 	~GSPlay();
-
 	void Init();
 	void Exit();
 
 	void Pause();
 	void Resume();
-
+	bool isOnRange(int idx, int x, int y, int sz);
 	void HandleEvents();
 	void HandleKeyEvents(int key, bool bIsPressed);
 	void Newgame();
 	void HandleTouchEvents(int x, int y, bool bIsPressed);
 	void Update(float deltaTime);
 	void Draw();
-	void DrawGame();
-	void CardClick(int x, int y);
 private:
 
 	std::shared_ptr<Sprite2D> m_BackGround;
@@ -41,11 +38,9 @@ private:
 	std::shared_ptr<Text>  m_time;
 	std::vector < std::shared_ptr<Sprite2D>> m_listSprite2D;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
-	std::list<std::shared_ptr<Card>>	m_listCard;
-	Card *card_back=NULL;
-	std::shared_ptr<Card> card1;
 	std::shared_ptr<Card> card[24];
+	std::shared_ptr<Card> cardDown[24];
+	std::vector < std::shared_ptr<Card>> cardback,cardface;
 
-//	std::vector < std::shared_ptr<Card>> card;
 };
 

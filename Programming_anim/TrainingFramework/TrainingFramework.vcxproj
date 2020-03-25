@@ -35,35 +35,35 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Angle|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-AMD|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-ATI|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-ATI|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Nvidia|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Nvidia|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -276,7 +276,6 @@
     <ClCompile Include="src\GameStates\GameStatebase.cpp" />
     <ClCompile Include="src\GameStates\GameStateMachine.cpp" />
     <ClCompile Include="src\GameStates\GSIntro.cpp" />
-    <ClCompile Include="src\GameStates\GSLOSE.cpp" />
     <ClCompile Include="src\GameStates\GSMenu.cpp" />
     <ClCompile Include="src\GameStates\GSPauseMenu.cpp" />
     <ClCompile Include="src\GameStates\GSPlay.cpp" />
@@ -289,7 +288,7 @@
     <ClInclude Include="src\GameManager\ResourceManagers.h" />
     <ClInclude Include="src\GameManager\Singleton.h" />
     <ClInclude Include="src\GameObject\BaseObject.h" />
-    <ClInclude Include="src\GameObject\card.h" />
+    <ClInclude Include="src\GameObject\Card.h" />
     <ClInclude Include="src\GameObject\Font.h" />
     <ClInclude Include="src\GameObject\GameButton.h" />
     <ClInclude Include="src\GameObject\GSSetting.h" />
@@ -304,7 +303,6 @@
     <ClInclude Include="src\GameStates\GameStatebase.h" />
     <ClInclude Include="src\GameStates\GameStateMachine.h" />
     <ClInclude Include="src\GameStates\GSIntro.h" />
-    <ClInclude Include="src\GameStates\GSLOSE.h" />
     <ClInclude Include="src\GameStates\GSMenu.h" />
     <ClInclude Include="src\GameStates\GSPauseMenu.h" />
     <ClInclude Include="src\GameStates\GSPlay.h" />

@@ -12,7 +12,7 @@
 
 extern int screenWidth; //need get on Graphic engine
 extern int screenHeight; //need get on Graphic engine
-
+extern int clickstat;
 GSSetting::GSSetting()
 {
 }
@@ -26,6 +26,7 @@ GSSetting::~GSSetting()
 
 void GSSetting::Init()
 {
+	clickstat = 0;
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
 	auto texture = ResourceManagers::GetInstance()->GetTexture("bg");
 
@@ -74,10 +75,16 @@ void GSSetting::HandleKeyEvents(int key, bool bIsPressed)
 
 void GSSetting::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
-	for (auto it : m_listButton)
-	{
-		(it)->HandleTouchEvents(x, y, bIsPressed);
-		if ((it)->IsHandle()) break;
+	if (!clickstat) {
+		for (auto it : m_listButton)
+		{
+			(it)->HandleTouchEvents(x, y, bIsPressed);
+			if ((it)->IsHandle()) break;
+		} clickstat = 1;
+	}
+	else {
+
+		clickstat = 0;
 	}
 }
 

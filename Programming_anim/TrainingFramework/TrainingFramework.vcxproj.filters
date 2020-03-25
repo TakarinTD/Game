@@ -78,9 +78,6 @@
     <ClCompile Include="src\GameStates\GSPauseMenu.cpp">
       <Filter>TrainingFramework\src\GameStates</Filter>
     </ClCompile>
-    <ClCompile Include="src\GameStates\GSLOSE.cpp">
-      <Filter>TrainingFramework\src\GameStates</Filter>
-    </ClCompile>
     <ClCompile Include="src\GameObject\Card.cpp">
       <Filter>TrainingFramework\src\GameObject</Filter>
     </ClCompile>
@@ -152,10 +149,7 @@
     <ClInclude Include="src\GameStates\GSPauseMenu.h">
       <Filter>TrainingFramework\src\GameStates</Filter>
     </ClInclude>
-    <ClInclude Include="src\GameStates\GSLOSE.h">
-      <Filter>TrainingFramework\src\GameStates</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GameObject\card.h">
+    <ClInclude Include="src\GameObject\Card.h">
       <Filter>TrainingFramework\src\GameObject</Filter>
     </ClInclude>
   </ItemGroup>

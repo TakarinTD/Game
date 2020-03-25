@@ -5,7 +5,7 @@
 #include "Models.h"
 #include "Camera.h"
 #include "Font.h"
-
+extern int clickstat;
 
 
 extern int screenWidth; //need get on Graphic engine
@@ -24,8 +24,9 @@ GSPauseMenu::~GSPauseMenu()
 
 void GSPauseMenu::Init()
 {
+	clickstat=0;
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_play");
 
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
@@ -90,10 +91,15 @@ void GSPauseMenu::HandleKeyEvents(int key, bool bIsPressed)
 
 void GSPauseMenu::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
-	for (auto it : m_listButton)
-	{
-		(it)->HandleTouchEvents(x, y, bIsPressed);
-		if ((it)->IsHandle()) break;
+	if (!clickstat) {
+		for (auto it : m_listButton)
+		{
+			(it)->HandleTouchEvents(x, y, bIsPressed);
+			if ((it)->IsHandle()) break;
+		} clickstat = 1;
+	}
+	else {
+		clickstat = 0;
 	}
 }
 
